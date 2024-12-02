@@ -1,0 +1,47 @@
+
+body {
+    background-color: #222121a4;
+    background-size: cover; /* Faz a imagem cobrir toda a área */
+    background-position: center; /* Centraliza a imagem */
+    color: white; /* Cor do texto para contraste */
+    
+}
+h
+table {
+    width: 90%;
+    border-collapse: collapse;
+    background-color: rgba(217, 217, 217, 0.5); /* Cor de fundo cinza com transparência */
+    backdrop-filter: blur(10px); /* Efeito de desfoque */
+    border-radius: 10px; /* Adiciona cantos arredondados */
+}
+th, td {
+    border: 10px solid #504d4d;
+    padding: 18px;
+    text-align: left;
+    font-weight: bold; /* Letras em negrito */
+}
+
+th {
+    background-color: rgba(242, 242, 242, 0.8); /* Cor de fundo do cabeçalho com transparência */
+    
+}
+
+/* Estilo para as células de GATILHOS, PLACA DE METAL, MOLAS e PEÇAS DE ARMAS */
+.clean-input {
+    border: none; /* Remove a borda interna */
+    text-align: right; /* Alinha o texto à direita */
+}
+input[type="number"] {
+    width: 100%; 
+    padding: 4px; 
+    font-size: 16px; 
+}
+input[type="number"]:read-only {
+    background-color: #f9f9f9; /* Cor de fundo para os inputs readonly */
+}
+/* Remove as setinhas (controles de incremento e decremento) dos campos de entrada do tipo number */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}

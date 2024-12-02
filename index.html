@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela Simples</title>
+    <link rel="stylesheet" href="styles.css">
+    
+</head>
+<body>
+    <h1>Tabela de ARMAS</h1>
+    <table>
+        <tr>
+            <th>ARMAS</th>
+            <th>GATILHOS</th>
+            <th>PLACA DE METAL</th>
+            <th>MOLAS</th>
+            <th>PEÇAS DE ARMAS</th>
+            <th>QUANTIDADE DE ARMAS</th>
+        </tr>
+        <tr>
+            <td>PT</td>
+            <td><input type="number" class="clean-input" value="1" readonly></td>
+            <td><input type="number" class="clean-input" value="45" readonly></td>
+            <td><input type="number" class="clean-input" value="45" readonly></td>
+            <td><input type="number" class="clean-input" value="90" readonly></td>
+            <td><input type="number" class="clean-input" value="1" oninput="updateMaterials(this, 'PT')"></td>
+        </tr>
+        <tr>
+            <td>HK G3A3</td>
+            <td><input type="number" class="clean-input" value="1" readonly></td>
+            <td><input type="number" class="clean-input" value="90" readonly></td>
+            <td><input type="number" class="clean-input" value="60" readonly></td>
+            <td><input type="number" class="clean-input" value="300" readonly></td>
+            <td><input type="number" class="clean-input" value="1" oninput="updateMaterials(this, 'HK G3A3')"></td>
+        </tr>
+        <tr>
+            <td>AK-47 LATAO</td>
+            <td><input type="number" class="clean-input" value="1" readonly></td>
+            <td><input type="number" class="clean-input" value="90" readonly></td>
+            <td><input type="number" class="clean-input" value="60" readonly></td>
+            <td><input type="number" class="clean-input" value="300" readonly></td>
+            <td><input type="number" class="clean-input" value="1" oninput="updateMaterials(this, 'AK-47 LATAO')"></td>
+        </tr>
+        <tr>
+            <td>AR-10</td>
+            <td><input type="number" class="clean-input" value="1" readonly></td>
+            <td><input type="number" class="clean-input" value="90" readonly></td>
+            <td><input type="number" class="clean-input" value="60" readonly></td>
+            <td><input type="number" class="clean-input" value="300" readonly></td>
+            <td><input type="number" class="clean-input" value="1" oninput="updateMaterials(this, 'AR-10')"></td>
+        </tr>      
+        <tr>
+            <td>AR PENTE DUPLO</td>
+            <td><input type="number" class="clean-input" value="1" readonly></td>
+            <td><input type="number" class="clean-input" value="100" readonly></td>
+            <td><input type="number" class="clean-input" value="70" readonly></td>
+            <td><input type="number" class="clean-input" value="400" readonly></td>
+            <td><input type="number" class="clean-input" value="1" oninput="updateMaterials(this, 'AR PENTE DUPLO')"></td>
+        </tr>
+        <tr>
+            <td>AR LUNETA PRATA</td>
+            <td><input type="number" class="clean-input" value="1" readonly></td>
+            <td><input type="number" class="clean-input" value="100" readonly></td>
+            <td><input type="number" class="clean-input" value="70" readonly></td>
+            <td><input type="number" class="clean-input" value="400" readonly></td>
+            <td><input type="number" class="clean-input" value="1" oninput="updateMaterials(this, 'AR LUNETA PRATA')"></td>
+        </tr>
+        <tr>
+            <td>G36</td>
+            <td><input type="number" class="clean-input" value="1" readonly></td>
+            <td><input type="number" class="clean-input" value="100" readonly></td>
+            <td><input type="number" class="clean-input" value="70" readonly></td>
+            <td><input type="number" class="clean-input" value="400" readonly></td>
+            <td><input type="number" class="clean-input" value="1" oninput="updateMaterials(this, 'G36')"></td>
+        </tr>
+        <tr>
+            <td>MTAR</td>
+            <td><input type="number" class="clean-input" value="1" readonly></td>
+            <td><input type="number" class="clean-input" value="100" readonly></td>
+            <td><input type="number" class="clean-input" value="70" readonly></td>
+            <td><input type="number" class="clean-input" value="400" readonly></td>
+            <td><input type="number" class="clean-input" value="1" oninput="updateMaterials(this, 'MTAR')"></td>
+        </tr>
+       
+        <tr>
+            <td>G3 LUNETE</td>
+            <td><input type="number" class="clean-input" value="1" readonly></td>
+            <td><input type="number" class="clean-input" value="100" readonly></td>
+            <td><input type="number" class="clean-input" value="70" readonly></td>
+            <td><input type="number" class="clean-input" value="400" readonly></td>
+            <td><input type="number" class="clean-input" value="1" oninput="updateMaterials(this, 'G3 lunete')"></td>
+        </tr>
+        <tr>
+            <td>AK-47 PENTE ESTENDIDO</td>
+            <td><input type="number" class="clean-input" value="1" readonly></td>
+            <td><input type="number" class="clean-input" value="100" readonly></td>
+            <td><input type="number" class="clean-input" value="70" readonly></td>
+            <td><input type="number" class="clean-input" value="400" readonly></td>
+            <td><input type="number" class="clean-input" value="1" oninput="updateMaterials(this, 'AK-47 pente estendido')"></td>
+        </tr>
+        <tr>
+            <td>UZI TAMBOR</td>
+            <td><input type="number" class="clean-input" value="1" readonly></td>
+            <td><input type="number" class="clean-input" value="100" readonly></td>
+            <td><input type="number" class="clean-input" value="70" readonly></td>
+            <td><input type="number" class="clean-input" value="400" readonly></td>
+            <td><input type="number" class="clean-input" value="1" oninput="updateMaterials(this, 'UZI TAMBOR')"></td>
+        </tr>
+        <tr>
+            <td>AK-472</td>
+            <td><input type="number" class="clean-input" value="1" readonly></td>
+            <td><input type="number" class="clean-input" value="100" readonly></td>
+            <td><input type="number" class="clean-input" value="70" readonly></td>
+            <td><input type="number" class="clean-input" value="400" readonly></td>
+            <td><input type="number" class="clean-input" value="1" oninput="updateMaterials(this, 'AK-472')"></td>
+        </tr>
+        <tr>
+            <td>AR PENTE DE ACRILICO</td>
+            <td><input type="number" class="clean-input" value="1" readonly></td>
+            <td><input type="number" class="clean-input" value="100" readonly></td>
+            <td><input type="number" class="clean-input" value="70" readonly></td>
+            <td><input type="number" class="clean-input" value="400" readonly></td>
+            <td><input type="number" class="clean-input" value="1" oninput="updateMaterials(this, 'AR PENTE DE ACRILICO')"></td>
+        </tr>
+        <tr>
+            <td>HK TATICA</td>
+            <td><input type="number" class="clean-input" value="1" readonly></td>
+            <td><input type="number" class="clean-input" value="100" readonly></td>
+            <td><input type="number" class="clean-input" value="70" readonly></td>
+            <td><input type="number" class="clean-input" value="400" readonly></td>
+            <td><input type="number" class="clean-input" value="1" oninput="updateMaterials(this, 'HK TATICA')"></td>
+        </tr>
+    </table>
+
+
+    <script>
+        // Definindo as quantidades específicas de materiais por arma
+        const materialsPerWeapon = {
+            'PT': { gatilhos: 1, placaMetal: 45, molas: 45, pecasArmas: 90 },
+            'HK G3A3': { gatilhos: 1, placaMetal: 90, molas: 60, pecasArmas: 300 },
+            'AK-47 LATAO': { gatilhos: 1, placaMetal: 90, molas: 60, pecasArmas: 300 },
+            'AR-10': { gatilhos: 1, placaMetal: 90, molas: 60, pecasArmas: 300 },
+            'G36': { gatilhos: 1, placaMetal: 100, molas: 70, pecasArmas: 400 },
+            'MTAR': {gatilhos: 1, placaMetal: 100, molas: 70, pecasArmas: 400},
+            'AR LUNETA PRATA': { gatilhos: 1, placaMetal: 100, molas: 70, pecasArmas: 400 },
+            'AR PENTE DUPLO': { gatilhos: 1, placaMetal: 100, molas: 70, pecasArmas: 400 },
+            'G3 lunete': { gatilhos: 1, placaMetal: 100, molas: 70, pecasArmas: 400  },
+            'AK-47 pente estendido': { gatilhos: 1, placaMetal: 100, molas: 70, pecasArmas: 400  },
+            'UZI TAMBOR': { gatilhos: 1, placaMetal: 100, molas: 70, pecasArmas: 400  },
+            'AK-472': { gatilhos: 1, placaMetal: 100, molas: 70, pecasArmas: 400  },
+            'AR PENTE DE ACRLICO': { gatilhos: 1, placaMetal: 100, molas: 70, pecasArmas: 400  },
+            'HK TATICA': { gatilhos: 1, placaMetal: 100, molas: 70, pecasArmas: 400  }
+        };
+
+        function updateMaterials(input, weaponName) {
+            const row = input.closest('tr');
+            const armas = parseInt(input.value) || 0;
+
+            // Obtém os valores de materiais específicos para a arma
+            const materialValues = materialsPerWeapon[weaponName];
+            if (materialValues) {
+                const gatilhos = armas * materialValues.gatilhos;
+                const placaMetal = armas * materialValues.placaMetal;
+                const molas = armas * materialValues.molas;
+                const pecasArmas = armas * materialValues.pecasArmas;
+
+                // Atualiza os inputs das categorias
+                const inputs = row.querySelectorAll("input[type='number']");
+                inputs[0].value = gatilhos;         // Gatilhos
+                inputs[1].value = placaMetal;       // Placa de Metal
+                inputs[2].value = molas;            // Molas
+                inputs[3].value = pecasArmas;       // Peças de Armas
+
+                // Atualiza os totais de todas as categorias
+                updateTotal();
+            }
+        }
+
+        function updateTotal() {
+            let totalGatilhos = 0;
+            let totalPlacaMetal = 0;
+            let totalMolas = 0;
+            let totalPecasArmas = 0;
+
+            // Seleciona todas as linhas da tabela (exceto o cabeçalho)
+            const rows = document.querySelectorAll("table tr:not(:first-child)");
+
+            rows.forEach(row => {
+                const inputs = row.querySelectorAll("input[type='number']");
+                if (inputs.length > 0) {
+                    totalGatilhos += parseInt(inputs[0].value) || 0; // Gatilhos
+                    totalPlacaMetal += parseInt(inputs[1].value) || 0; // Placa de Metal
+                    totalMolas += parseInt(inputs[2].value) || 0; // Molas
+                    totalPecasArmas += parseInt(inputs[3].value) || 0; // Peças de Armas
+                }
+            });
+
+            // Atualiza os totais na tela
+            document.getElementById("total-gatilhos").innerText = `Total Gatilhos: ${totalGatilhos}`;
+            document.getElementById("total-placa-metal").innerText = `Total Placa de Metal: ${totalPlacaMetal}`;
+            document.getElementById("total-molas").innerText = `Total Molas: ${totalMolas}`;
+            document.getElementById("total-pecas-armas").innerText = `Total Peças de Armas: ${totalPecasArmas}`;
+        }
+    </script>
+
+</body>
+</html>
